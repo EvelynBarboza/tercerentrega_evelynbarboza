@@ -3,11 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Crushed&display=swap');
 
 header {
-    font-family: 'Crushed', cursive;
-}
-
-header ul li {
-    font-size: x-large;
+        font-family: 'Crushed', cursive;
+    ul li {
+        font-size: x-large;
+    }
 }
 
 /*¡¡¡¡¡¡¡¡¡¡     FOOTER     !!!!!!!!!!!!*/
@@ -42,80 +41,82 @@ header ul li {
 /*¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡   MAIN   !!!!!!!!!!!!!!!!!!!!!!!!!*/
 
 main .h1-index {
-    font-family:'Crushed', cursive;
-    font-size: 0.8cm;
-    text-shadow: 0px 5px 8px rgba(247, 3, 186, 0.25);
-    text-align: center;
-    color: rgb(2, 2, 2);
-    margin-top: 250px;
-    margin-bottom: 100px;
-    z-index: 50px;
-}
-
-main .sale {
-    text-decoration: none;
-    font-family: 'Crushed', cursive;
-    color: #e470c3;
-    font-size: 70px;
-}
-
-.off {
-    color: rgb(205, 195, 205);
-    font-family: 'Crushed', cursive;
-    font-size: 10em;
+        font-family:'Crushed', cursive;
+        font-size: 0.8cm;
+        text-shadow: 0px 5px 8px rgba(247, 3, 186, 0.25);
+        text-align: center;
+        color: rgb(2, 2, 2);
+        margin-top: 250px;
+        margin-bottom: 100px;
+        z-index: 50px;
+    .sale {
+        text-decoration: none;
+        font-family: 'Crushed', cursive;
+        color: #e470c3;
+        font-size: 70px;
+    .off {
+        color: rgb(205, 195, 205);
+        font-family: 'Crushed', cursive;
+        font-size: 10em;
+        }
+    }
 }
 
 /*¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡           PRODUCTOS             !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
-.buscarformulario {
-    color: #10060f;
-    font-family: 'Crushed', cursive;
-    margin: 1em;
-    font-size: large;
+main .buscarformulario {
+        color: #10060f;
+        font-family: 'Crushed', cursive;
+        margin: 1em;
+        font-size: large;
+    section .card {
+        align-items: center;
+        background-color: #f7e2f5;
+        margin: 4em;
+    div .card-body {
+        margin: 0.4cm;
+        margin-top: 0.4cm;
+        .card-title {
+            font-family: 'Crushed', cursive;
+            color: #9e5f99;
+            text-align: center;
+            }
+            
+        }    
+    }
 }
- main section .card {
-    
-    align-items: center;
-    background-color: #f7e2f5;
-    margin: 4em;
- }
-
- main div .card-body {
-    margin: 0.4cm;
-    margin-top: 0.4cm;
- }
-
- .card-title {
-    font-family: 'Crushed', cursive;
-    color: #9e5f99;
-    text-align: center;
- }
 
 /*¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡             METODOS DE COMPRA            !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
 main div .card-body {
-    margin: 0.4cm;
-    margin-top: 0.4cm;
+            margin: 0.4cm;
+            margin-top: 0.4cm;
+        .card-text {  
+            font-family: 'Crushed', cursive;
+            color: #10060f;
+            text-align: center;
+            margin-top: 2em;
+        .listamediospago {
+            font-family: 'Crushed', cursive;
+            color: #10060f;
+            text-align: center;
+            li {
+                list-style-type: none;
+                text-align: center;
+            }   
+        }
+    }
  }
 
-.card-text {  
-    font-family: 'Crushed', cursive;
-    color: #10060f;
-    text-align: center;
-    margin-top: 2em;
-}
-
-.listamediospago {
-    font-family: 'Crushed', cursive;
-    color: #10060f;
-    text-align: center;
-}
-.listamediospago li {
-    list-style-type: none;
-    text-align: center;
-}
-
 /*¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡             NOSOTROS            !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+article .card {
+            background-color: #f7e2f5;
+            align-content: center;
+        .card-text {
+            padding: 20px;
+        }
+}
 
 .logoentero {
     width: 8cm;
@@ -124,29 +125,19 @@ main div .card-body {
     margin-left: 100px;
 }
 
-.card {
-    background-color: #f7e2f5;
-   align-content: center;
-}
-.card-text {
-    padding: 20px;
-}
-
 /*¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡              CONTACTO            !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
-.form-label {
-    font-family: 'Crushed', cursive;
-    color: #10060f;
-}
-
-.mb-3 {
-    margin: 50px;
-}
-
-.comentario {
-    font-family: 'Crushed', cursive;
-    color: #9e5f99;
-    margin: 50px 100px;
-    font-size: x-large;
-    text-align: center;
+main section .mb-3 {
+                margin: 50px;
+            .form-label {
+                font-family: 'Crushed', cursive;
+                color: #10060f;
+            .comentario {
+                font-family: 'Crushed', cursive;
+                color: #9e5f99;
+                margin: 50px 100px;
+                font-size: x-large;
+                text-align: center;
+                }
+        }  
 }
