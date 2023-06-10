@@ -9,8 +9,12 @@
 header {
   font-family: "Crushed", cursive;
 }
-header ul li {
+header nav .navbar-nav li {
   font-size: x-large;
+}
+header nav .navbar-nav li .nav-link:hover {
+  cursor: pointer;
+  color: #f6d5f2;
 }
 
 /*¡¡¡¡¡¡¡¡¡¡     FOOTER     !!!!!!!!!!!!*/
@@ -41,17 +45,17 @@ header ul li {
 }
 
 /*¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡   MAIN   !!!!!!!!!!!!!!!!!!!!!!!!!*/
-main section .conteiner .sale {
+main section .container .sale {
   text-decoration: none;
   font-family: "Crushed", cursive;
   color: #e470c3;
   font-size: 70px;
 }
-main section .conteiner .sale:hover {
+main section .container .sale:hover {
   cursor: pointer;
   color: #f6d5f2;
 }
-main section .conteiner .off {
+main section .container .off {
   color: rgb(205, 195, 205);
   font-family: "Crushed", cursive;
   font-size: 10em;
@@ -67,75 +71,47 @@ main section div div div .h1-index {
   z-index: 50px;
 }
 
-/*main {
-    section {
-        .conteiner
-                    .h1-index {       
-                        font-size: 0.8cm;
-                        font-family: $font;   
-                        text-shadow: 0px 5px 8px rgba(247, 3, 186, 0.25);
-                        text-align: center;
-                        color: $color-black;
-                        margin-top: 250px;
-                        margin-bottom: 100px;
-                        z-index: 50px;  
-                    }
-        .conteiner          
-                    .sale {
-                        text-decoration: none;
-                        font-family: $font;
-                        color: #e470c3;
-                        font-size: 70px;
-                        &:hover {
-                            cursor: pointer;
-                            color: $color-fondo;
-
-                    }
-        .conteiner        
-                    .off {
-                        color: rgb(205, 195, 205);
-                        font-family: $font;
-                        /*font-size: 10em;*/
 /*¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡           PRODUCTOS             !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-main .buscarformulario {
+main section .container .card {
+  align-items: center;
+  background-color: #f6d5f2;
+  /* margin: 4em;*/
+}
+main section .container .card-body {
+  margin: 0.4cm;
+  margin-top: 0.4cm;
+  background-color: #f6d5f2;
+}
+main section .container .card-body .card-title {
+  font-family: "Crushed", cursive;
+  color: #9e5f99;
+  text-align: center;
+}
+main section .container .buscarformulario {
   color: #030003;
   font-family: "Crushed", cursive;
   margin: 1em;
   font-size: large;
 }
-main .buscarformulario section .card {
-  align-items: center;
-  background-color: #f6d5f2;
-  margin: 4em;
-}
-main .buscarformulario section .card div .card-body {
-  margin: 0.4cm;
-  margin-top: 0.4cm;
-}
-main .buscarformulario section .card div .card-body .card-title {
-  font-family: "Crushed", cursive;
-  color: #9e5f99;
-  text-align: center;
-}
 
 /*¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡             METODOS DE COMPRA            !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-main div .card-body {
+main .card .card-body {
   /* margin: 0.4cm;
    margin-top: 0.4cm;*/
   background-color: #f6d5f2;
 }
-main div .card-body .card-text {
+main .card .card-body .card-title .card-text {
   font-family: "Crushed", cursive;
   color: #030003;
   text-align: center;
   margin-top: 2em;
 }
-main div .card-body .card-text .listamediospago {
+main .card .card-body .card-title .card-text .listamediospago {
   font-family: "Crushed", cursive;
   color: #030003;
   text-align: center;
 }
-main div .card-body .card-text .listamediospago li {
+main .card .card-body .card-title .card-text .listamediospago li {
   list-style-type: none;
   text-align: center;
 }
@@ -145,7 +121,7 @@ article .card {
   background-color: #f6d5f2;
   align-content: center;
 }
-article .card .card-text {
+article .card .card-body .card-text {
   padding: 20px;
 }
 
@@ -160,9 +136,10 @@ article .card .card-text {
 main section .mb-3 {
   margin: 50px;
 }
-main section .form-label {
+main section .mb-3 .form-label {
   font-family: "Crushed", cursive;
   color: #030003;
+  margin: 2px;
 }
 main section .comentario {
   font-family: "Crushed", cursive;

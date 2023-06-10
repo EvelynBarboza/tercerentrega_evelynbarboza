@@ -8,10 +8,20 @@
 
 header {
         font-family: $font;
-    ul li {
-        font-size: x-large;
+        nav {
+            .navbar-nav {
+                li {
+                    font-size: x-large;
+                    .nav-link {
+                        &:hover {
+                        cursor: pointer;
+                        color: $color-fondo;
+                        }
+                    }
+                }
+            }
+        }
     }
-}
 
 /*¡¡¡¡¡¡¡¡¡¡     FOOTER     !!!!!!!!!!!!*/
 
@@ -46,7 +56,7 @@ header {
 
 main {
     section {
-        .conteiner {
+        .container {
             .sale {
                 text-decoration: none;
                 font-family: $font;
@@ -61,7 +71,7 @@ main {
             }
         }
 
-        .conteiner {
+        .container {
             .off {
                 color: rgb(205, 195, 205);
                 font-family: $font;
@@ -87,95 +97,80 @@ main {
         }
     }
 }
-
-/*main {
-    section {
-        .conteiner
-                    .h1-index {       
-                        font-size: 0.8cm;
-                        font-family: $font;   
-                        text-shadow: 0px 5px 8px rgba(247, 3, 186, 0.25);
-                        text-align: center;
-                        color: $color-black;
-                        margin-top: 250px;
-                        margin-bottom: 100px;
-                        z-index: 50px;  
-                    }
-        .conteiner          
-                    .sale {
-                        text-decoration: none;
-                        font-family: $font;
-                        color: #e470c3;
-                        font-size: 70px;
-                        &:hover {
-                            cursor: pointer;
-                            color: $color-fondo;
-
-                    }
-        .conteiner        
-                    .off {
-                        color: rgb(205, 195, 205);
-                        font-family: $font;
-                        /*font-size: 10em;*/
-           
         
 /*¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡           PRODUCTOS             !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
-main .buscarformulario {
-        color: $color-black;
-        font-family: $font;
-        margin: 1em;
-        font-size: large;
-    section .card {
+main {
+    section {
+        .container {
+            .card {
                 align-items: center;
                 background-color: $color-fondo;
-                margin: 4em;
-        div .card-body {
+               /* margin: 4em;*/   
+            }    
+        } 
+        .container {
+            .card-body {
                 margin: 0.4cm;
                 margin-top: 0.4cm;
-            .card-title {
-            font-family: $font;
-            color: $color-tituloS;
-            text-align: center;
+                background-color: $color-fondo;
+                .card-title {
+                    font-family: $font;
+                    color: $color-tituloS;
+                    text-align: center;
+                    }
+                }
             }
-            
+        .container {
+            .buscarformulario {
+                color: $color-black;
+                font-family: $font;
+                margin: 1em;
+                font-size: large;}   
         }    
     }
 }
-
 /*¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡             METODOS DE COMPRA            !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
-main div .card-body {
+main {
+    .card {
+        .card-body {
            /* margin: 0.4cm;
             margin-top: 0.4cm;*/
             background-color: $color-fondo;
-        .card-text {
-            font-family: $font;
-            color: $color-black;
-            text-align: center;
-            margin-top: 2em;
-        .listamediospago {
-            font-family: $font;
-            color: $color-black;
-            text-align: center;
-            li {
-                list-style-type: none;
-                text-align: center;
-            }   
+            .card-title {
+                .card-text {
+                    font-family: $font;
+                    color: $color-black;
+                    text-align: center;
+                    margin-top: 2em;
+                    .listamediospago {
+                        font-family: $font;
+                        color: $color-black;
+                        text-align: center;
+                        li {
+                            list-style-type: none;
+                            text-align: center;
+                        }
+                    }
+                }   
+            }
         }
     }
- }
-
+}
 /*¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡             NOSOTROS            !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
-article .card {
-    background-color: $color-fondo;
-            align-content: center;
-        .card-text {
-            padding: 20px;
+article {
+    .card {
+        background-color: $color-fondo;
+        align-content: center;
+        .card-body {
+            .card-text {
+                padding: 20px;
+            }
         }
-}
-
+    }  
+} 
 .logoentero {
     width: 8cm;
     top: 1000px;
@@ -187,14 +182,15 @@ article .card {
 
 main {
     section {
-        .mb-3 {
+            .mb-3 {
                 margin: 50px;
-            }
-            .form-label {
-                font-family: $font;
-                color: $color-black;
-            }
-            .comentario {
+                .form-label {
+                    font-family: $font;
+                    color: $color-black;
+                    margin: 2px;
+                    }
+                } 
+    .comentario {
                 font-family: $font;
                 color: $color-tituloS;
                 margin: 50px 100px;
@@ -202,4 +198,4 @@ main {
                 text-align: center;
             }
         }
-    }  
+    } 
