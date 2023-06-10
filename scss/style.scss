@@ -46,7 +46,7 @@ header {
 
 main {
     section {
-        .conteiner {
+        .container {
             .sale {
                 text-decoration: none;
                 font-family: $font;
@@ -61,14 +61,13 @@ main {
             }
         }
 
-        .conteiner {
+        .container {
             .off {
                 color: rgb(205, 195, 205);
                 font-family: $font;
                 font-size: 10em;
             }
         }
-
         div {
             div {
                 div {
@@ -88,37 +87,7 @@ main {
     }
 }
 
-/*main {
-    section {
-        .conteiner
-                    .h1-index {       
-                        font-size: 0.8cm;
-                        font-family: $font;   
-                        text-shadow: 0px 5px 8px rgba(247, 3, 186, 0.25);
-                        text-align: center;
-                        color: $color-black;
-                        margin-top: 250px;
-                        margin-bottom: 100px;
-                        z-index: 50px;  
-                    }
-        .conteiner          
-                    .sale {
-                        text-decoration: none;
-                        font-family: $font;
-                        color: #e470c3;
-                        font-size: 70px;
-                        &:hover {
-                            cursor: pointer;
-                            color: $color-fondo;
 
-                    }
-        .conteiner        
-                    .off {
-                        color: rgb(205, 195, 205);
-                        font-family: $font;
-                        /*font-size: 10em;*/
-           
-        
 /*¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡           PRODUCTOS             !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
 main .buscarformulario {
