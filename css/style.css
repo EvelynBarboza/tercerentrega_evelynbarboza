@@ -72,25 +72,48 @@ main section div div div .h1-index {
 }
 
 /*¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡           PRODUCTOS             !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-main section .container .card {
+main .container2 {
+  justify-items: center;
+}
+main .container2 .card {
   align-items: center;
   background-color: #f6d5f2;
-  /* margin: 4em;*/
+  width: 460px;
+  height: 900px;
+  margin: 20px;
+  justify-content: center;
 }
-main section .container .card-body {
-  margin: 0.4cm;
+main .container2 .card .card-body {
+  /*margin: 0.4cm;*/
   margin-top: 0.4cm;
-  background-color: #f6d5f2;
+  /*background-color: $color-fondo;*/
 }
-main section .container .card-body .card-title {
+main .container2 .card .card-body .card-title {
   font-family: "Crushed", cursive;
   color: #9e5f99;
   text-align: center;
 }
-main section .container .buscarformulario {
+main .container2 .card-top {
+  align-items: center;
+  background-color: #f6d5f2;
+  width: 460PX;
+  height: 340px;
+  margin: 20px;
+}
+main .container2 .card-top .card-body {
+  margin: 0.4cm;
+  margin-top: 0.4cm;
+  background-color: #f6d5f2;
+}
+main .container2 .card-top .card-body .card-title {
+  font-family: "Crushed", cursive;
+  color: #9e5f99;
+  text-align: center;
+}
+main .container1 .buscarformulario {
   color: #030003;
   font-family: "Crushed", cursive;
-  margin: 1em;
+  margin: 2em;
   font-size: large;
 }
 

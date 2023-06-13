@@ -1,0 +1,11 @@
+@mixin card-productos ($ancho, $alto, $margin){
+    width: $ancho;
+    height: $alto;
+    margin: $margin;
+}
+
+@mixin card-top ($ancho, $alto, $margin){
+    width: $ancho;
+    height: $alto;
+    margin: $margin;
+}

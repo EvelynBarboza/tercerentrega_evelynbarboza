@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Crushed&display=swap');
 @import "variables";
+@import "mixins";
+
 *{
     font-family: $font;
 }
@@ -101,35 +103,50 @@ main {
 /*¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡           PRODUCTOS             !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
 main {
-    section {
-        .container {
+    .container2 {
+        justify-items: center;
             .card {
                 align-items: center;
                 background-color: $color-fondo;
-               /* margin: 4em;*/   
-            }    
-        } 
-        .container {
-            .card-body {
-                margin: 0.4cm;
-                margin-top: 0.4cm;
+                @include card-productos (460px, 900px, 20px);
+                justify-content: center;
+                .card-body {
+                    /*margin: 0.4cm;*/
+                    margin-top: 0.4cm;
+                    /*background-color: $color-fondo;*/
+                    .card-title {
+                        font-family: $font;
+                        color: $color-tituloS;
+                        text-align: center;
+                        }
+                    }
+                }
+            .card-top {
+                align-items: center;
                 background-color: $color-fondo;
-                .card-title {
-                    font-family: $font;
-                    color: $color-tituloS;
-                    text-align: center;
+                @include card-top (460PX, 340px, 20px);
+                .card-body {
+                    margin: 0.4cm;
+                    margin-top: 0.4cm;
+                    background-color: $color-fondo;
+                    .card-title {
+                        font-family: $font;
+                        color: $color-tituloS;
+                        text-align: center;
+                        }
                     }
                 }
             }
-        .container {
+    .container1 {
             .buscarformulario {
                 color: $color-black;
                 font-family: $font;
-                margin: 1em;
-                font-size: large;}   
+                margin: 2em;
+                font-size: large;
+            }   
         }    
     }
-}
+
 /*¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡             METODOS DE COMPRA            !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
 main {
